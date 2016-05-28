@@ -1,0 +1,859 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+
+/* Mobile Layout: 480px and below. 
+ACA VAN LOS ESTILOS DE LA VERSION MÓVIL
+*/
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+header{
+        width: 480px;
+        height: 70px;
+        background-color: #2a6f8b;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+}
+
+#logo{
+    list-style: none;
+    display: block;
+    position: fixed;
+    background-image: url(../img/logoblanco.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+  }
+
+header ul li{
+    display: none;
+    
+}
+#redes{
+    display:none;
+	background-color:none;
+ 
+}
+
+.habilidades{
+   display: block;
+    padding-top: 700px;
+    margin-bottom: -200px;
+  position: static;
+    background-image: url(../img/habilidadesmovil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    
+}
+
+.foto{
+    display: block;
+    margin: auto;
+    padding-top: 150px;
+    width: 50%;
+  }
+
+.textoyo{
+    display: block;
+    text-align: justify;
+    color: #2a6f8b;
+    font-family: verdana;
+    font-size: 11px;
+    
+
+}
+
+section ul {
+        display: block;
+        margin-top: 10px;
+    }
+
+#contact_form {
+        display: block;
+        margin: 0 auto;
+        padding-top: 140px;
+        margin-bottom: -100px;
+        font-family: verdana;    
+ }
+    
+#submit_button {
+        margin-top: 10px;
+        background-color:#235e74;
+        font-family: verdana;
+        color: white;
+        
+ }
+    
+menu{
+    display: block;
+    width: 440px;
+    height: 60px;
+    background-color:#2a6f8b;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 100;
+    
+}
+
+    
+nav{
+    display: none;
+    width: 720px;
+    height: 60px;
+    background-color:#2a6f8b;
+    position: fixed;
+    top: 160px;
+    left: 0;
+    z-index: 100;
+    }
+menu ul {
+    margin-left: -60px;
+}
+menu ul li{
+    display: block;
+    width: 110px;
+    float: left;
+    background-color: none;
+    position: center    ;
+    text-align: center; 
+   
+}
+
+menu ul li a{
+    display: block;
+    width: 110px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff; 
+    background-color: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 15px;   
+    
+}
+menu a:hover{
+    display: block;
+    margin-bottom: 10px;
+    width: 110px;
+    height: 20px;
+    background-color:#235e74;
+    background-size: auto;
+    color:white;
+    opacity: 10;
+ 
+}
+
+.slider{
+	width: 440px;
+	margin: auto;
+	position: static;
+	overflow: hidden;
+    padding-top: 100px;
+
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 600%;
+
+	animation: cambio 10s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+
+.slider li{
+	width: 100%;
+	list-style:none;
+
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0; }
+	15% {margin-left: 0; }
+
+	15% {margin-left: -100%;}
+	30% {margin-left: -100%;}
+
+	30% {margin-left: -200%;}
+	45% {margin-left: -200%;}
+
+	45% {margin-left: -300%;}
+	60% {margin-left: -300%;}
+
+	60% {margin-left: -400%;}
+	75% {margin-left: -400%;}
+
+	75% {margin-left: -500%;}
+	100% {margin-left: -500%;}
+}
+
+.redeshome{
+    margin-top: -20px;
+	display: block;
+	background-color:none;
+    margin-left: -30px;
+ 
+}
+.redeshome ul{
+    text-align:center;
+
+}
+
+.redeshome ul li{
+    display: inline-block;
+}
+
+#behance{
+    width: 80px;
+    height: 80px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    image-orientation: center;
+    background-image: url(../img/behance.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+
+}
+
+#facebook{
+    width: 80px;
+    height: 80px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    image-orientation: center;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+#pinterest{
+    width: 80px;
+    height: 80px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    image-orientation: center;
+    background-image: url(../img/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+#instagram{
+    width: 80px;
+    height: 80px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    image-orientation: center;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+}
+
+hr{
+    margin: auto;
+    width: 400px;
+}
+footer{
+	margin-left: auto;
+	position: static;
+	text-align: center;
+	font-family: verdana;	
+	font-size: 12px;
+	color:#1E4B62;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. 
+ACA VAN LOS ESTILOS DE LA VERSION TABLET
+*/
+
+@media only screen and (min-width: 550px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+    
+header{
+        display: block;
+        width: 760px;
+        height: 200px;
+        background-color:#2a6f8b;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+header{
+    margin-top: -50px;
+	display: block;
+	background-color:none;
+    margin-left: -30px;
+ 
+}
+header ul{
+    text-align:right;
+
+}
+
+header ul li{
+    display: inline-block;
+    }
+
+#logo{
+    list-style:none;
+    margin: auto;
+    background-image: url(../img/logoblancov.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+
+    }
+    
+.foto{
+    display: block;
+    float: left;
+    padding-top: 270px;
+    width: 40%;
+  }
+
+.textoyo{
+    display: block;
+    float: right;
+    text-align: justify;
+    padding-left: 260px;
+    padding-top: 340px;
+    color: #2a6f8b;
+    font-family: verdana;
+    position: absolute;
+    font-size: 12px;
+    
+    }
+    
+.habilidades{
+    display: block;
+    padding-top: 770px;
+    margin-bottom: -300px;
+  position: static;
+    background-image: url(../img/habilidadespantalla.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+       
+}
+    
+    section ul {
+        display: block;
+        margin-top: 275px;
+        
+        
+    }
+    
+   #contact_form {
+        display: block;
+        margin: 0 auto;
+        padding-top: 260px;
+        font-family: verdana;    
+    }
+    
+    #submit_button {
+        margin-top: 10px;
+        background-color:#235e74;
+        font-family: verdana;
+        color: white;
+        
+    }
+    
+nav{
+    display: none;
+    width: 720px;
+    height: 60px;
+    background-color:#2a6f8b;
+    position: fixed;
+    top: 160px;
+    left: 0;
+    z-index: 100;
+    }
+#redes{
+    margin: 0 auto;
+	display: block ;
+    float: left;
+	background-color:none;
+ 
+}
+#redes ul{
+    padding-top: 10px;
+    text-align:right;
+}
+
+#redes ul li{
+    display: inline-block;
+}
+
+#behance{
+    width: 40px;
+    height: 40px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../img/behance.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+
+}
+
+#facebook{
+      width: 40px;
+    height: 40px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+#pinterest{
+    width: 40px;
+    height: 40px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../img/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+#instagram{
+    width: 40px;
+    height: 40px;
+    background-color: #2a6f8b;  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+
+}
+    
+menu{
+    display: block;
+    width: 720px;
+    height: 60px;
+    background-color:#2a6f8b;
+    text-decoration: none;
+    text-decoration-color: white;
+    position: fixed;
+    top: 160px;
+    left: 0;
+    z-index: 100;
+    
+}
+menu ul {
+    margin-left: -60px;
+    color:white;
+}
+menu ul li{
+    display: block;
+    width: 180px;
+    float: left;
+    background-color: none;
+    text-decoration: none;
+    position: center;
+    text-align: center; 
+    color: white;
+   
+}
+
+menu ul li a{
+    display: block;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    color: white; 
+    background-color: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 5px;   
+    
+}
+menu a:hover{
+    display: block;
+    margin-bottom: -10px;
+    width: 180px;
+    height: 20px;
+    background-color:#235e74;
+    background-size: auto;
+    background-position: center;
+    color:white;
+    opacity: 10;
+    }
+.redeshome{
+    margin: 0 auto;
+	display: none;
+    text-decoration: none;
+	background-color:none;
+    
+}
+    
+.slider{
+	width: 600px;
+	margin-top: -130px;
+	position: static;
+	overflow: hidden;
+
+}
+
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 600%;
+
+	animation: cambio 10s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+
+.slider li{
+	width: 100%;
+	list-style:none;
+
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0; }
+	15% {margin-left: 0; }
+
+	15% {margin-left: -100%;}
+	30% {margin-left: -100%;}
+
+	30% {margin-left: -200%;}
+	45% {margin-left: -200%;}
+
+	45% {margin-left: -300%;}
+	60% {margin-left: -300%;}
+
+	60% {margin-left: -400%;}
+	75% {margin-left: -400%;}
+
+	75% {margin-left: -500%;}
+	100% {margin-left: -500%;}
+}
+    
+hr{
+    width: 600px;
+}    
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. 
+ACA VAN LOS ESTILOS DE LA VERSION PANTALLA
+*/
+    
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+header{
+        display: block;
+        width: 1350px;
+        height: 100px;
+        background-color: #2a6f8b;
+    }
+ 
+#logo{
+    list-style:none;
+    background-image: url(../img/logoblanco.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20%;
+
+    }
+    
+nav{
+    display: block;
+    width: 720px;
+    height: 60px;
+    background-color:#2a6f8b;
+    position: fixed;
+    top: 30px;
+    left: 360px;
+    z-index: 100;
+    
+}
+.foto{
+    display: block;
+    float: left;
+    padding-top: 140px;
+    width: 40%;
+  }
+
+.textoyo{
+    display: block;
+    text-align: justify;
+    padding-left: 460px;
+    padding-top: 310px;
+    padding-right: 100px;
+    color: #2a6f8b;
+    font-family: verdana;
+    position: absolute;
+    font-size: 18px;
+    
+    }
+    
+.habilidades{
+    display: block;
+    padding-top: 700px;
+    margin-bottom: -100px;
+    position: static;
+    background-image: url(../img/habilidadespantalla.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+       
+    }
+    
+    section ul {
+        display: block;
+        margin-top: 150px;
+    }
+    
+    #contact_form {
+        display: block;
+        margin: 0 auto;
+        padding-top: 140px;
+        font-family: verdana;    
+    }
+    
+    #submit_button {
+        margin-top: 10px;
+        background-color:#235e74;
+        font-family: verdana;
+        color: white;
+        
+    }
+    
+nav ul {
+    margin-left: -60px;
+}
+nav ul li{
+    display: block;
+    width: 120px;
+    float: left;
+    background-color: none;
+    text-decoration: none;
+    position: center;
+    text-align: center; 
+   
+}
+
+nav ul li a{
+    display: block;
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff; 
+    background-color: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 5px;   
+    
+}
+nav a:hover{
+    display: block;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 20px;
+    background-color:#235e74;
+    background-size: auto;
+    color:white;
+    opacity: 10;
+    }  
+        
+.slider{
+	width: 700px;
+	margin-top: -150px;
+	overflow: hidden;
+
+}
+
+.slider ul{
+	display: flex;
+	width: 600%;
+
+	animation: cambio 10s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+
+.slider li{
+	width: 100%;
+	list-style:none;
+
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0; }
+	15% {margin-left: 0; }
+
+	15% {margin-left: -100%;}
+	30% {margin-left: -100%;}
+
+	30% {margin-left: -200%;}
+	45% {margin-left: -200%;}
+
+	45% {margin-left: -300%;}
+	60% {margin-left: -300%;}
+
+	60% {margin-left: -400%;}
+	75% {margin-left: -400%;}
+
+	75% {margin-left: -500%;}
+	100% {margin-left: -500%;}
+}
+    
+menu{
+    display: none;
+    width: 480px;
+    height: 50px;
+    background-color:#2a6f8b;
+    text-decoration: none;
+    margin: 0 auto;
+                      
+}
+.redeshome{
+    margin: 0 auto;
+	display: none;
+	background-color:none;
+    }
+    
+hr{
+    margin: auto;
+    width: 800px;
+}  
